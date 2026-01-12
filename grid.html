@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> layout </title>
+
+    <!-- Style -->
+     <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* grid-template-rows: 1ft 1fr 1fr 50px 50px; */
+            grid-template-rows: repeat(3,200px);
+            gap: 20px;
+        }
+        .box{
+            background-color: gainsboro;
+            padding: 10px;
+        }
+
+        #sidebar{
+            grid-row: span 5;
+        }
+
+        .footer{
+            grid-column: span 3;
+        }
+
+        /* Media Query */
+        @media screen and (max-width: 576px){
+            .container{
+                display: gird;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(1,1fr);
+            }
+
+            #sidebar{
+                 grid-row: span 2;
+                grid-column: span 2;
+               
+               
+            }
+
+            .footer{
+                 grid-row: span 2 ;
+                grid-column: span 2;
+            }
+
+            .box{
+                grid-row: span 2 ;
+                grid-column: span 2;
+
+            }
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar" class="box">box - 1</div>
+        <div class="box">box - 2</div>
+        <div class="box">box - 3</div>
+        <div class="box">box - 4</div>
+        <div class="box">box - 5</div>
+        <div class="box">box - 6</div>
+        <div class="box">box - 7</div>
+        <div class="box">box - 8</div>
+        <div class="box">box - 9</div>
+        <div class="box">box - 10</div>
+        <div class="box footer">box - 11</div>
+        <div class="box footer">box - 12</div>
+    </div>
+</body>
+</html>
