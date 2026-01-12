@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+
+    <!-- Style -->
+     <style>
+
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: teal;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+
+
+        .items{
+            width: 100px;
+            background-color: tomato;
+            padding: 10px;
+        }
+
+
+        @media screen and (max-width:576px){
+           .container{
+            flex-direction: column;
+           }
+
+
+           .items{
+            width: 100%;
+           }
+        }
+     </style>
+</head>
+<body>
+    <h2>Let's Explore Flex</h2>
+
+    <div class="container">
+        <div class="box">
+            <h3>Box - 1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus debitis labore cupiditate, ea ipsam voluptates delectus, eos blanditiis optio impedit dolorem nam reiciendis eaque fuga minus voluptatem harum illum a excepturi. Iusto in, fuga ipsum saepe excepturi ex eaque magnam commodi iure, pariatur adipisci distinctio modi corporis officiis, nam eligendi dolorum accusamus. Sit beatae nulla quia similique rerum velit ipsa?</p>
+        </div>
+        <div class="box">
+            <h3>Box - 2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus debitis labore cupiditate, ea ipsam voluptates delectus, eos blanditiis optio impedit dolorem nam reiciendis eaque fuga minus voluptatem harum illum a excepturi. Iusto in, fuga ipsum saepe excepturi ex eaque magnam commodi iure, pariatur adipisci distinctio modi corporis officiis, nam eligendi dolorum accusamus. Sit beatae nulla quia similique rerum velit ipsa?</p>
+        </div>
+
+    </div>
+
+    <div class="box-container">
+        <div class="items">Box - 1</div>
+        <div class="items">Box - 2</div>
+        <div class="items">Box - 3</div>
+        <div class="items">Box - 4</div>
+        <div class="items">Box - 5</div>
+        <div class="items">Box - 6</div>
+        <div class="items">Box - 7</div>
+        <div class="items">Box - 8</div>
+        <div class="items">Box - 9</div>
+        <div class="items">Box - 10</div>
+        <div class="items">Box - 11</div>
+        <div class="items">Box - 12</div>
+        <div class="items">Box - 13</div>
+        <div class="items">Box - 14</div>
+        <div class="items">Box - 15</div>
+        <div class="items">Box - 16</div>
+        <div class="items">Box - 17</div>
+        <div class="items">Box - 18</div>
+        <div class="items">Box - 19</div>
+        <div class="items">Box - 20</div>
+         <div class="items">Box - 1</div>
+        <div class="items">Box - 2</div>
+        <div class="items">Box - 3</div>
+        <div class="items">Box - 4</div>
+        <div class="items">Box - 5</div>
+        <div class="items">Box - 6</div>
+        <div class="items">Box - 7</div>
+        <div class="items">Box - 8</div>
+        <div class="items">Box - 9</div>
+        <div class="items">Box - 10</div>
+    </div>
+</body>
+</html>
