@@ -1,6 +1,6 @@
 .container>*{
     border: 3px solid yellow;
-    background-color: aqua;
+    background-color: green;
     padding: 10px;
 }
 
@@ -37,4 +37,39 @@ footer{
      "navbar main main advertise"
      "footer footer footer footer"
     ;
+}
+
+
+/* Mobile Device */
+@media screen and (max-width: 576px){
+
+    .container{
+    
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "advertise"
+    "footer"
+    ;
+}
+
+    
+}
+
+
+/* Medium Device  */
+@media screen and (min-width: 577px) and (max-width:992px){
+    .container{
+        grid-template-areas: 
+          "header header header"
+          "navbar navbar navbar"
+          "sidebar main main"
+          "sidebar"
+          "advertise footer footer"
+          "footer"
+
+        ;
+    }
 }
